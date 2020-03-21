@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Talon osuus on: </p>
+<p id="tuloskentta">
+
+</p>
+
+<script>
+
+    let rake=0;
+    let arvo=0;
+    while(true){
+        let odd = prompt('anna oddsi');
+        if(odd==0){
+            break;
+        }
+        arvo = 1/odd;
+        rake+=arvo;
+    }
+    document.getElementById("tuloskentta").innerHTML = rake-1;
+
+
+</script>
+
+</body>
+</html>

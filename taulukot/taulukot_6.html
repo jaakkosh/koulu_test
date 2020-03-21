@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let taulukko= [];
+    let i=0;
+    let luku=1;
+    while(luku!=0) {
+        luku = prompt('Anna luku:');
+        if(luku==0){
+            break;
+        }
+        taulukko[i]=luku;
+        i++;
+    }
+    taulukko.sort((a, b) => {a - b});
+
+
+    let mones = Math.floor((i-1)/2);
+    let tupla = Math.floor(taulukko.length / 2);
+
+    if(i % 2 == 0) {
+        document.write(tupla);
+    }
+    else{
+        document.write(taulukko[mones]);
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let taulukko=[];
+    let i=0;
+    do {
+
+        luku = prompt('Anna luku:');
+        i++;
+        taulukko[i]=luku;
+    }
+    while (luku!=0);
+    taulukko.sort(function(a, b){return b - a});
+    for(let a=0;a<i;a++){
+        document.writeln(taulukko[a]+'\n');
+    }
+</script>
+
+</body>
+</html>

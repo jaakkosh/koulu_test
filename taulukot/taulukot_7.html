@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let ehdokkaat= [];
+        let maara = prompt('Monta ehdokasta?');
+        for(let n=1;n<=maara;n++){
+            ehdokkaat[n]=0;
+        }
+        let aanestajat = prompt('Monta äänestäjää?');
+        for(let i=0;i<aanestajat;i++){
+            let keta=prompt('Kelle annat äänesi?')
+            if(keta>0 && keta<=maara){
+                ehdokkaat[keta]=ehdokkaat[keta]+1;
+            }
+
+
+        }
+        let suurin=0;
+        let voittaja=0;
+        for(let a=1;a<=ehdokkaat.length;a++){
+            if(ehdokkaat[a]>suurin){
+                suurin=ehdokkaat[a];
+                voittaja=a;
+            }
+        }
+
+        document.writeln('vaalien voittaja on: ' + voittaja);
+
+
+
+    </script>
+
+</body>
+</html>

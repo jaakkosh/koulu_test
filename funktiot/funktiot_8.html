@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonacci(viite) {
+        let lukujono=[0];
+        lisays=1;
+        lisatty=1;
+        for(let i=1;i<=viite;i++){
+
+            lukujono[i]=lisatty;
+            lisatty+=lukujono[i-1];
+        }
+        return lisatty;
+    }
+    let mones = prompt('monennen luvun haluat?');
+    document.write(fibonacci(mones-1));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function parilliset(lukuja){
+    parit = [];
+    let luku=-1;
+        for(let i=0;i<lukuja.length;i++){
+            if(lukuja[i] % 2==0) {
+                luku++;
+                parit[luku]=lukuja[i];
+            }
+        }
+        return parit;
+    }
+    taulukko_lukuja=[1,2,3,4,0,22,23];
+
+    document.write(parilliset(taulukko_lukuja));
+</script>
+</body>
+</html>

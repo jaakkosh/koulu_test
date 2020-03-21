@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function suurin(viittaus) {
+        let iso=0;
+        for(i=0;i<3;i++){
+            if(iso<viittaus[i]){
+                iso = viittaus[i];
+            }
+        }
+        return iso;
+    }
+    let taulukko = [];
+    for(i=0;i<3;i++){
+        numero = prompt('Anna luku:');
+        taulukko[i]=numero;
+    }
+
+    document.write(suurin(taulukko));
+</script>
+</body>
+</html>

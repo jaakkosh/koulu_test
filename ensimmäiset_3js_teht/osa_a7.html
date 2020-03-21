@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let saldo = prompt("Anna saldo");
+    let saldo_oikea=saldo;
+    let korko = prompt("Anna korko%");
+    parseInt(saldo=saldo*(korko/100));
+    parseInt(korko=saldo_oikea*1 + saldo_oikea*(korko/100));
+    document.write('<p> Vuodessa korkoa kertyy ' + (saldo.toFixed(2)) + ' euroa.</p>');
+    document.write('<p> Tilin saldo vuoden päästä ' + (korko.toFixed(2)) + ' euroa.</p>');
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="haku" onclick="hae()">hae>
+ffs
+</button>
+<p id="hakua"></p>
+
+<script>
+    function hae() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("hakua").innerHTML =
+                    this.responseText;
+            }
+        };
+
+        xhttp.open("GET", href="https://www.veikkaus.fi/api/v1/sport-games/draws?game-names=SPORT", true,"POST /api/bff/v1/sessions",);
+        xhttp.send({"type":"STANDARD_LOGIN","login":"katki89","password":"vaihda_salasanaxxx"});
+    }</script>
+</body>
+</html>
